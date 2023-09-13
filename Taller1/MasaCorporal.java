@@ -12,22 +12,23 @@ public class MasaCorporal {
         float peso = IngreseDato("Por favor ingrese el peso del usuario en kilos: ");
         float estatura = IngreseDato("Por favor ingrese la estatura del usuario en metros: ");
         double indiceMasaCorporal = peso / Math.pow(estatura, 2);
- 
-        System.out.println("El individuo con "+peso+" kilogramos de peso y una estatura de "+estatura+ " metros.");
-        System.out.println("Tiene un indice de masa corporal de "+indiceMasaCorporal);
+
+        System.out
+                .println("El individuo con " + peso + " kilogramos de peso y una estatura de " + estatura + " metros.");
+        System.out.println("Tiene un indice de masa corporal de " + indiceMasaCorporal);
     }
 
-    public static float IngreseDato(String message){
+    public static float IngreseDato(String message) {
         Float dato = 0f;
-    
-        do{
+
+        do {
             System.out.println(message);
             dato = Float.parseFloat(Input.nextLine());
-            if(dato<=0){
+            if (dato <= 0) {
                 System.out.println("El numero ingresado debe ser mayor a cero");
             }
-        }while(dato<=0);
-    
+        } while (dato <= 0);
+
         return dato;
-      }
+    }
 }
