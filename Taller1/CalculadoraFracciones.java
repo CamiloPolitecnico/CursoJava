@@ -14,12 +14,13 @@ public class CalculadoraFracciones{
 
         System.out.println("Ejercicio 1. Caculadora de fracciones");
 
-
         numerador = IngreseDato("Por favor ingrese numerador primera fraccion: ", false);
         denominador = IngreseDato("Por favor ingrese denominador primera fraccion: ", true);
         float fracion1 = numerador / denominador;
         messageResult = messageResult + numerador + "/" + denominador;
 
+        //Para el ingreso de la segunda fraccion debemos validar que el resultado no de cero
+        //Porque si se ingresa una operacion de division saldria error
         numerador = IngreseDato("Por favor ingrese numerador segunda fraccion: ", true);
         denominador = IngreseDato("Por favor ingrese denominador segunda fraccion: ", true);
         float fracion2 = numerador / denominador;
